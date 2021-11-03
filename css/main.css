@@ -473,10 +473,12 @@ padding-top: 150px;
 
 }
 .photo-grid-container {
-    display: block;
+    display: grid;
     margin: 50px auto;
     column-count: 2;
+    grid-template-columns: 1fr 1fr;
     column-gap: 1.4em;
+    align-items: center;
 }
 
 .photo-container {
@@ -621,9 +623,6 @@ padding-top: 150px;
         width: -moz-fit-content;
         color: #FFFFFF;
     }
-    .toggle {
-        display: none;
-    }
 
     .footer {
         margin: 0 auto;
@@ -634,6 +633,7 @@ padding-top: 150px;
     }
 
     .photo-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
         column-count: 3;
     }
 
