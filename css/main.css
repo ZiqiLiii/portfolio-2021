@@ -149,12 +149,12 @@ header {
 
 .nav-item {
     text-align: center;
-    display: none;
+    /* display: none; */
 }
 
 .nav-item-current a{
     display: block;
-    padding: 20px;
+    padding: 10px;
     font-weight: 700;
     letter-spacing: 0.1em;
     transition: all 0.2s ease;
@@ -166,12 +166,11 @@ header {
 
 .nav-item a {
     display: block;
-    padding: 20px;
+    padding: 10px;
     font-weight: 700;
     width: 100vw;
     letter-spacing: 0.1em;
     transition: all 0.2s ease;
-    color: #000000;
     text-decoration: none;
 }
 
@@ -186,14 +185,6 @@ header {
 }
 
 
-
-.toggle {
-    padding: 1.1em;
-}
-
-.toggle i {
-    font-size: 2em;
-}
 
 
 
@@ -335,6 +326,10 @@ h3 a:hover {
 
 /* --- PROFILE --- */
 
+#profile {
+    padding-top: 150px;
+}
+
 .profile-container {
     margin-top: 25px;
     display: flex;
@@ -406,7 +401,7 @@ h3 a:hover {
 
 .projects {
     display: inline-flex;
-    padding-top: 100px;
+    padding-top: 150px;
     max-width: 1200px;
 }
 
@@ -472,6 +467,11 @@ h3 a:hover {
 
 
 /* --- PHOTO GALLERY--- */
+.photos{
+
+padding-top: 150px;
+
+}
 .photo-grid-container {
     display: block;
     margin: 50px auto;
