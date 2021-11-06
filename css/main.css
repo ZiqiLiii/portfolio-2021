@@ -30,12 +30,10 @@ h3 {
     text-align: center;
     font-size: 1.4em;
     font-weight: 700;
-    letter-spacing: 0.1em;
 }
 
 h4, h5 {
     font-weight: 700;
-    letter-spacing: 0.05em;
 }
 
 .date {
@@ -65,14 +63,6 @@ a, span {
 
 ul {
     list-style-type: none;
-}
-
-.social-link a i {
-    transition: all 0.2s ease;
-}
-
-.social-link a i:hover {
-    color: #b688d7;
 }
 
 .main-container {
@@ -206,18 +196,6 @@ header {
     justify-content: center;
 }
 
-.landing-page-socials ul {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-}
-
-.landing-page-socials ul li a i {
-    font-size: 1.5em;
-    padding: 10px;
-    margin: 0 5px;
-}
-
 .small-title {
     text-align: left;
     font-size: 1.5em;
@@ -249,11 +227,6 @@ h3 em {
     letter-spacing: 0.05em;
 }
 
-h3 a:hover {
-    color: #f2b00a;
-    text-decoration: underline;
-}
-
 .short-bio {
     margin-top: 1em;
     display: flex;
@@ -265,7 +238,6 @@ h3 a:hover {
     margin-top: 25px;
     font-size: 1.2em;
     line-height: 1.5em;
-    letter-spacing: 0.025em;
 }
 
 .cta-container {
@@ -276,12 +248,8 @@ h3 a:hover {
     display: flex;
     text-align: center;
     align-items: center;
-    width: fit-content;
-    width: -moz-fit-content;
     padding: 10px 12px;
     border-radius: 15px;
-    border: 1px solid #FFFFFF;
-    font-weight: 700;
     letter-spacing: 0.05em;
     color: #1D263B;
     background-color: #FFFFFF;
@@ -318,7 +286,7 @@ h3 a:hover {
 }
 
 .art-me img {
-    padding: 0 60px 0 0;
+    padding: 0 40px 0 0;
     width: 300px;
 }
 
@@ -349,12 +317,6 @@ h3 a:hover {
     width: 100%;
 }
 
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
 
 /* --- EDUCATION & EXPERIENCE --- */
 
@@ -408,7 +370,6 @@ h3 a:hover {
 .project-cards-container {
     margin-top: 50px;
     height: fit-content;
-    height: -moz-fit-content;
 }
 
 .card {
@@ -453,7 +414,7 @@ h3 a:hover {
 }
 
 .project-skills span {
-    color: #b688d7;
+    color: #1D263B;
     font-weight: 700;
     font-size: 0.9em;
     letter-spacing: 0.05em;
@@ -523,26 +484,6 @@ padding-top: 150px;
     align-self: flex-start;
 }
 
-.socials {
-    margin: 10px 0;
-}
-
-.socials ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    margin: 15px 0;
-}
-
-.socials ul li:not(:last-child) {
-    margin-right: 12px;
-}
-
-.socials ul li a i {
-    font-size: 1.5em;
-}
-
 .copyright {
     margin-top: 5px;
     letter-spacing: 0.05em;
@@ -572,15 +513,6 @@ padding-top: 150px;
     }
     #home {
         flex-direction: row;
-    }
-    .landing-page-socials ul {
-        flex-direction: column;
-    }
-    .landing-page-socials ul li a i {
-        margin: 5px 0;
-    }
-    .email-container {
-        margin: 0;
     }
     #education-experience {
         display: flex;
