@@ -10,6 +10,23 @@
     scroll-behavior: smooth;
 }
 
+.skip {
+    right:30px;
+    padding: 6px;
+    position: absolute;
+    top: -50px;
+    transform: top 1s ease-out;
+    z-index: 1;
+    color:white;
+    background-color: #000000;
+  }
+
+.skip:focus{
+    position:absolute;
+    top:20px;
+    text-decoration: none;
+}
+
 body {
     background-color: #000000;
 }
@@ -185,7 +202,7 @@ header {
 /* --- LANDING PAGE --- */
 
 #home {
-    margin: -100px auto 0 auto;;
+    margin: 0 auto 0 auto;;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -458,6 +475,10 @@ padding-top: 150px;
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+}
+
+.photo-title{
+    padding: 10px 0 0 0;
 }
 
 
