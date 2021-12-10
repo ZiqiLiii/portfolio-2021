@@ -306,6 +306,47 @@ h3 em {
 }
 
 
+/* FLIP CARDS */
+.flip-card {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border: 5px solid transparent;
+    padding:10px;
+}
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:focus-within .flip-card-inner,
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+      /* Position the front and back side */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+      /* style the back side */
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  
+
+
 
 /* --- PROFILE --- */
 
@@ -505,8 +546,83 @@ padding-top: 150px;
 }
 
 
+/* --- REDUCE MOTION --- */
+@media (prefers-reduced-motion: reduce) {
+    
+    .flip-card:focus-within .flip-card-inner,
+    .flip-card:hover .flip-card-inner {
+      transform: none;
+    }
+
+    .flip-card-back {
+        transform: none;
+      }
+
+    }
+
+/* --- FORM --- */
 
 
+form {
+    width:80%;
+    margin: 0 auto;
+    
+  }
+  
+  legend{ 
+    font-size: 125%;
+    font-style:italic;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  label{
+    display: inline-block;
+    margin-right:10px;
+    width:50%;
+  }
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding:5px
+  }
+  
+  textarea{
+    width: 100%;
+    height: 35vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color:#000000;
+  }
+  
+  
+  input[type=checkbox]{
+      display:inline;
+      width:inherit;
+  }
+  
+  input[type=submit] {
+    background-color: #f2b00a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  
+  
 
 /* --- VIEWS --- */
 
@@ -590,7 +706,7 @@ padding-top: 150px;
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1024px) {
     #home {
         gap: 10%;
     }
@@ -621,6 +737,7 @@ padding-top: 150px;
     }
 
     .photo-grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         column-count: 4;
     }
 }

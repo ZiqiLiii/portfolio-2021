@@ -11,7 +11,17 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/html5reset.css">  
         <link rel="stylesheet" href="./css/main.css" type="text/css">
-    </head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VGFG8D2KG"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5VGFG8D2KG');
+    </script>
+    
+</head>
    
     <body>
         <a class = "skip" href="#skipto">Skip to Main Content</a>
@@ -43,18 +53,61 @@
 
 <br><br>I love Milk-tea 🥤  K-POP 🎤  Cooking 🍳  Violin 🎻  theme park 🎡</p>
 
+
+
+
                     </div>
 
                 </div>
-                <div class="art-me">
-                    <img src="./img/me.png" alt="Me">
+
+                
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <div class="art-me">
+                        <img src="./img/me.png" alt="Me">
+                        <p>Me Before Covid-19</p>
+                    </div>
+                      </div>
+                      <div class="flip-card-back">
+                        <div class="art-me">
+                            <img src="./img/me2.png" alt="Me">
+                            <p>Me During Covid-19</p>
+                        </div>
+                    </div>
+                         
+                      </div>
+                    </div>
                 </div>
+           
+
+                <!-- <div class="art-me">
+                    <img src="./img/me.png" alt="Me">
+                </div> -->
             </section>
-            <section class="projects" id="select-projects">
-                <h2>Free to say hi!</h2>
-                <p class="section-description">
-                    would add a form here....
-                </p>
+            <section>
+                <form  action="https://formspree.io/f/xpzkgvrr"method="POST">
+                    <fieldset>
+                        <legend><h2>Contact Form</h2></legend>
+                      
+                      <label for="name_id"> Your Name</label>
+                      <input type="text" id="name_id" name="fullname" placeholder="Enter Your Name"></type>
+                  
+                      <label for="email_id">Your Email</label>
+                      <input type="text" name="name" id="email_id">
+                  
+                      <label for="phone_n">Your Phone Number</label>
+                      <input type="text" name="name" id="phone_n">
+                
+                      <label for="mess">Leave A Message</label>
+                      <textarea name="name" id="mess"></textarea>
+                  
+                      <input type="checkbox"> 
+                      Remember me
+                  
+                      <input type="submit" >
+                    </fieldset>
+                   </form>
             </section>
         </main>
 
